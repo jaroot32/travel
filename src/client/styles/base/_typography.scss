@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100&display=swap');
+
+$font-main: 'Work Sans', sans-serif;
+
+body {
+    font-family: $font-main;
+    margin: 0;
+    font-size: $font-size;
+}

@@ -1,0 +1,40 @@
+.form {
+    width: 100%;
+    &__heading {
+        width: 100%;
+        color: $color-white;
+        background: $color-primary;
+        line-height: 5rem;
+    }
+    &__field {
+        & label {
+            color: $color-accent;
+            display: block;
+        }
+        & input {
+            width: 100%;
+            background: $color-secondary;
+            color: $color-accent;
+        }
+        & textarea {
+            width: 100%;
+            color: $color-primary;
+            background: $color-secondary;
+            outline: none;
+            &:active, &:focus {
+                color: $color-accent;
+            }
+        }
+    }
+}
+
+input {
+    padding: 5px 20px;
+    width: 100%;
+    line-height: $line-height;
+    margin: ($spacing * .8) 0;
+}
+
+#error {
+    color: $color-invalid;
+}

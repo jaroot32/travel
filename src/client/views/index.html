@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Travel App - Project 5 - Capstone</title>
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <h1>Travel App Capstone</h1>
+            </div>
+            <div class="navigation">
+                <h1>Navigation</h1>
+            </div>
+        </header>
+        <main>
+            <section>
+                <!-- " -->
+                <form class="form" onsubmit="Client.cityHandler(event)">
+
+                    <!-- Put the city search here -->
+
+                    <label for="city">What city do you want to visit?</label><span id="city-error"></span>
+
+                    <input type="search" name="city" id="city" required>
+
+                    <label for="date">Enter your arrival date:</label><span id="date-error"></span>
+
+                    <input type="date" name="date" id="date" required>
+
+
+                    <input type="submit" name="" value="submit" onclick="Client.cityHandler(event)" onsubmit="return Client.cityHandler(event)">
+
+                    <!-- <label for="url">Analyze your URL:</label><span id="error"></span>
+                
+                    <input id="url" type="url" name="url" value="" placeholder="Website URL to 'Aylienize'">
+
+                    <input type="submit" name="" value="submit" onclick="Client.handleSubmit(event)" onsubmit="return Client.handleSubmit(event)"> -->
+            
+                    
+                </form>
+            <section>
+
+            <section>
+                <strong>Form Results:</strong>
+                <div id="cityImages"></div>
+                <div id="entryList"></div>
+            </section>
+        </main>
+
+        <footer>
+            <p>This is a footer</p>
+        </footer>
+
+    </body>
+    <script>
+        // Check that service workers are supported
+        if ('serviceWorker' in navigator) {
+            // Use the window load event to keep the page load performant
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/service-worker.js');
+            });
+        }
+       </script>
+</html>
